@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" crossorigin="anonymous" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" rel="stylesheet"/>
+    <link href="./flexbox.css" rel="stylesheet">
+    <title>Flexbox alignment examples</title>
+</head>
+
+<body>
+
+<h1>Flexbox alignment examples</h1>
+
+<h2>Horizontal alignment of text</h2>
+
+<div class="flex-column">
+    <div class="flex-item">
+        <span class="dashed">default alignment (left)</span>
+    </div>
+    <div class="flex-item" style="text-align: center">
+        <span class="dashed">text-align: center</span>
+    </div>
+    <div class="flex-item" style="text-align: right">
+        <span class="dashed">text-align: right</span>
+    </div>
+</div>
+
+<h2>Horizontal alignment of objects</h2>
+
+<div class="flex-column">
+    <div class="flex-item">
+        <div style="height: 50px; width: 200px; border: 1px solid black;">
+            <span class="dashed">default alignment (left)</span>
+        </div>
+    </div>
+    <div class="flex-item" style="display: flex; justify-content: center">
+        <div style="height: 50px; width: auto; border: 1px solid black;">
+            <span class="dashed">display: flex; justify-content: center</span>
+        </div>
+    </div>
+    <div class="flex-item" style="display: flex; flex-direction: row-reverse;">
+        <div style="height: 50px; width: auto; border: 1px solid black;">
+            <span class="dashed">display: flex; flex-direction: row-reverse;</span>
+        </div>
+    </div>
+</div>
+
+<h2>Horizontal alignment of text</h2>
+
+<div class="flex-column">
+    <div class="flex-item" style="height: 100px;">
+        <span class="dashed">default alignment (top)</span>
+    </div>
+    <div class="flex-item" style="height: 100px; display: flex; align-items: center;">
+        <span class="dashed">display: flex; align-items: center;</span>
+    </div>
+    <div class="flex-item" style="height: 100px; display: flex; align-items: flex-end;">
+        <span class="dashed">display: flex; align-items: flex-end;</span>
+    </div>
+</div>
+
+<h2>Horizontal alignment of objects</h2>
+
+<div class="flex-column">
+    <div class="flex-item" style="height: 100px;">
+        <div style="height: 50px; width: 200px; border: 1px solid black;">
+            <span class="dashed">default alignment (top)</span>
+        </div>
+    </div>
+
+    <div class="flex-item" style="height: 100px; display: flex; align-items: center;">
+        <div style="height: 50px; width: 200px; border: 1px solid black;">
+            <span class="dashed">display: flex; align-items: center;</span>
+        </div>
+    </div>
+
+    <div class="flex-item" style="height: 100px; display: flex; align-items: flex-end;">
+        <div style="height: 50px; width: 200px; border: 1px solid black;">
+            <span class="dashed">display: flex; align-items: flex-end;</span>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
